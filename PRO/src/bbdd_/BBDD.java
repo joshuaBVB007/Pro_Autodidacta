@@ -6,7 +6,7 @@ public class BBDD {
 		
 		try {
 			//Creamos conexion
-			Connection miconexion=DriverManager.getConnection("jdbc:mysql://localhost:3306/world","root", "jaKsVaFa");
+			Connection miconexion=DriverManager.getConnection("jdbc:mysql://localhost:3306/world?useSSL=false","root", "jaKsVaFa");
 			//creamos el statement 
 			Statement mistatement=miconexion.createStatement();
 			//creamos el resulset
@@ -15,6 +15,7 @@ public class BBDD {
 			while(miresultset.next()){
 				System.out.println(miresultset.getString("name"));
 			}
+			
 		} catch (SQLException e) {
 			System.out.println("Lo siento jonathan!");
 			e.printStackTrace();

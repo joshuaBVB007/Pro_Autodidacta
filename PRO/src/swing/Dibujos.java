@@ -26,14 +26,14 @@ class frame extends JFrame{
 		setBounds(20, 20, 300, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
-		add(new Lamina(),BorderLayout.NORTH);
+		add(new Laminas(),BorderLayout.NORTH);
 		add(new Lamina2(),BorderLayout.CENTER);
 		//pack();
 	}
 }
-class Lamina extends JPanel{
+class Laminas extends JPanel{
 	private JButton B1=new JButton("0");
-	public Lamina(){
+	public Laminas(){
 		setLayout(new BorderLayout());
 		add(B1,BorderLayout.NORTH);
 		B1.setEnabled(false);

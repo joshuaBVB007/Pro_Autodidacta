@@ -1,0 +1,10 @@
+1-una clase interna puede acceder a las propiedades 
+y metodos de su clase contenedora
+2-Para crear una instancia de una clase interna, 
+primero debe crear una instancia de la clase externa.
+Luego, crea el objeto interno dentro del objeto externo.
+
+
+hay 2 tipos especiales de clases internas:
+
+clases internas locales y anonimas.

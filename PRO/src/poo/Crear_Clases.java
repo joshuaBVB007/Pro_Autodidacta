@@ -5,8 +5,7 @@ public class Crear_Clases {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Pato Donald=new Pato("Donald");
-		Donald.setNombre("Cristo");
-		System.out.println(Donald.getNombre());
+		
 		
 	}
 

@@ -1,21 +1,29 @@
 package poo;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class joshua {
 	public static void main(String[] args) {
-		Apostador Apost1=new Apostador("ssss",12,0);
-		/*Apostador Apost2=new Apostador("ssss",12,0);
-		Apostador Apost3=new Apostador("ssss",12,0);
-		Apostador Apost4=new Apostador("ssss",12,0);*/
 		
-		Apostador.DameListaApuestas();
+		
+		
+		
+		
+		
+		
+		Apostador.crearRonda();
+		Apostador.ListarApostadores();
+		
+		
 	}
 }
 
 class Apostador{
-	static Set <Apostador> e=new HashSet <Apostador>();
+	static Set <Apostador> lista=new HashSet <Apostador>();
+	static ArrayList <Apostador> lista_Absoluta=new ArrayList <Apostador>(); 
 	private String DNI;
 	private int Local;
 	private int Visit;
@@ -24,37 +32,35 @@ class Apostador{
 		this.DNI=DNI;
 		this.Local=L;
 		this.Visit=V;
-		Apostador et=crearApostador(new Apostador(DNI,Local,Visit));
-		Apostador.Agregar(et);
-		
 	}
 	
-	public static Apostador crearApostador(Apostador es){	
-		return es;
+	public static  void crearRonda(){
+		Apostador e=new Apostador("12234",1,2);
+		Apostador w=new Apostador("12235",1,2);
+		Apostador x=new Apostador("12234",1,2);
+		Apostador d=new Apostador("12235",1,2);
+		lista.add(e);
+		lista.add(w);
+		lista.add(x);
+		lista.add(d);
 	}
-	
-	public static void Agregar(Apostador este){
-		e.add(este);
-	}
-	
-	public static void AgregarApuesta(Apostador a){
-		for (Apostador it: e) {
-			if(it.equals(a)){
-				e.add(a);
-			}else{
-				System.out.println("DNI iguales rechazada la apuesta");
-			}
-		}
-	}
-	
-	public static void DameListaApuestas(){
-		for (Apostador i: e) {
-			System.out.println(i);
-		}
-	}
-	
-	
 
+	
+	public static void ListarApostadores(){
+		System.out.println("la apuestas validas son");
+		for (Apostador e : lista) {
+			System.out.println(e.DNI);
+			lista_Absoluta.add(e);
+		}
+	}
+	
+	public static void anunciarGanador(){
+		int [] apuesta=new int[2];
+		for (int i = 0; i < apuesta.length; i++) {
+			apuesta[i]=(int)(Math.random()*10);
+		}
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -79,5 +85,8 @@ class Apostador{
 			return false;
 		return true;
 	}
-
+	
+	
+	
+		
 }

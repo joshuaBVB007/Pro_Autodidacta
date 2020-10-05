@@ -1,4 +1,4 @@
-package poo;
+package provasNivell;
 
 import java.io.BufferedReader;
 import java.io.IOException;

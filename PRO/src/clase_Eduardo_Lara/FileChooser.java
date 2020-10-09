@@ -1,4 +1,4 @@
-package Acceso_Ficheros;
+package clase_Eduardo_Lara;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 import javax.swing.JFileChooser;
 import javax.swing.JTextArea;
 
-public class Practica {
+public class FileChooser {
 
     public static void main(String[] args) {
         Scanner entrada = null;

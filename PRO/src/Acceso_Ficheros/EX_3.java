@@ -15,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class EX_5 {
+public class EX_3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

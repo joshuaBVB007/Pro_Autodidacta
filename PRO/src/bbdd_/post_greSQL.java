@@ -28,6 +28,7 @@ public class post_greSQL {
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
+			System.out.println("sorry");
 		}
 		
 		

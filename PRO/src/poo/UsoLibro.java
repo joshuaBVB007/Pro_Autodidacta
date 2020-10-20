@@ -7,6 +7,9 @@ public class UsoLibro {
 		Libro e=new Libro("Mi vida","Miguel",1234);
 		Libro et=new Libro("Mi vida","Miguel",1239);
 		Libro este=new Libro("mi vida","Miguel",1239);
+		Gritos ep=new Libro("m","r",23);
+		
+		ep.puta();
 		
 		if(et.equals(este)){
 			System.out.println("son el mismo libro");
@@ -17,7 +20,7 @@ public class UsoLibro {
 	}
 }
 
-class Libro{
+class Libro implements Gritos{
 	private String Nombre;
 	private String Autor;
 	private int ISBN;
@@ -48,6 +51,10 @@ class Libro{
 		if (ISBN != other.ISBN)
 			return false;
 		return true;
+	}
+	
+	public void puta(){
+		System.out.println("soy puta");
 	}
 
 }

@@ -1,4 +1,4 @@
-package clase_Eduardo_Lara;
+package sockets;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,4 +1,4 @@
-package clase_Eduardo_Lara;
+package sockets;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
